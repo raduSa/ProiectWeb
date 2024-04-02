@@ -1,0 +1,98 @@
+canvas {
+    border: 1px solid #000;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+}
+body {
+    background-color: blue;
+}
+header {
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: red;
+    position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+.snakeBody {
+  height: 15vh;
+  width: 25vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+  border: 5px solid black;
+  border-radius: 200px;
+  overflow: auto;
+  z-index: -2;
+}
+.blueBit {
+    background-color: cyan;
+    height: 100%;
+    width: 19%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    flex: 1 1 auto
+}
+.greenBit {
+    background-color: green;
+    height: 100%;
+    width: 19%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    flex: 1 1 auto
+}
+.snakeHead {
+    height: 10em;
+    width: 10em;
+    position: relative; 
+    left: -20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    overflow: hidden;
+}
+.snakeHead::before {
+    content: '';
+    position: absolute;
+    background-color: red;
+    height: 20px;
+    width: 50px;
+    z-index: -1;
+    left: 5px;
+}
+.headTop {  
+    height: 5em;
+    width: 10em;
+    background-color: green;
+    border-radius: 150px 150px 0 0;
+    transition: transform 1s;
+    transform-origin: bottom left;
+}
+.headTop:hover {
+    transform: rotate(-30deg);
+}
+.headBot {
+    height: 5em;
+    width: 10em;
+    background-color: green;
+    border-radius: 0 0 150px 150px;
+}
+.snake {
+    width: 100%;
+    height: 15vh;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: -1;    
+}
