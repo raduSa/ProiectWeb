@@ -9,28 +9,87 @@
 </head>
 <body>
     <header>
-        <h1> SNAKE </h1>
+        <div class="title">Snake</div>
+        <nav>
+            <ul>
+              <li><a href="#whatis">What?</a></li>
+              <li><a href="#history">When?</a></li>
+              <li><a href="#try">HOW?!</a></li>
+            </ul>   
+        </nav>
     </header>
-    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <br>
     <div class="snake">
         <div class="snakeBody">
-            <div class="blueBit"></div>
-            <div class="greenBit"></div>
-            <div class="blueBit"></div>
-            <div class="greenBit"></div>
-            <div class="blueBit"></div>
+            <div class="bodyBit"></div>
+            <div class="bodyBit"></div>
+            <div class="bodyBit"></div>
+            <div class="bodyBit"></div>
+            <div class="bodyBit"></div>
         </div>
         <div class="snakeHead">
-            <div class="headTop"></div>
+            <div class="headTop">
+                <div class="eye"></div>
+            </div>
             <div class="headBot"></div>
         </div>
+        <div class="dropdown">
+            <button class="dropdownButton">Choose color:</button>
+            <div class="dropdownContent">
+                <button id="Btn1">Var 1</button>
+                <button id="Btn2">Var 2</button>
+                <button id="Btn3">Var 3</button>
+            </div>
+        </div>
     </div>
-    <h2> LOL </h2>
-    <h2> LOL </h2>
-    <h2> LOL </h2>
-    <h2> LOL </h2>
-    <h2> LOL </h2>
-    <h2> LOL </h2>
-    <h2> LOL </h2>
+    <section id="whatis">
+        <h1> What is snake? </h1>
+        <article>
+            Snake is a sub-genre of action video games where the player maneuvers the end of a growing line, often themed as a snake. The player must keep the snake from colliding with both other obstacles and itself, which gets harder as the snake lengthens.
+            <figure>
+                <img src="Snake_can_be_completed.gif">
+                <figcaption>Snake, the single-player game!</figcaption>
+            </figure>
+        </article>
+    </section>
+    <section id="history">
+        <h1> A short history </h1>
+        <article id="history">
+            The Snake genre began with the 1976 arcade video game Blockade developed and published by Gremlin.
+            <figure>
+                <img src="Blockade_Arcade_US_flyer.jpg">
+                <figcaption>Blockade</figcaption>
+            </figure>
+        </article>
+        <article>
+            The first known home computer version, Worm, was programmed by Peter Trefonas for the TRS-80 and published by CLOAD magazine in 1978. Versions followed from the same author for the Commodore PET and Apple II.
+            <figure>
+                <img src="snake2.jpg">
+                <figcaption>Worm</figcaption>
+            </figure>
+        </article>
+        <article>
+            Nibbler (1982) is a single-player arcade game where the snake fits tightly into a maze, and the gameplay is faster than most snake designs.
+            <figure>
+                <img src="Nibbler_(1982_arcade_flyer).jpg">
+                <figcaption>Nibbler</figcaption>
+            </figure>
+        </article>
+        <article>
+            In 1992, Rattler Race was released as part of the second Microsoft Entertainment Pack. It adds enemy snakes to the familiar apple-eating gameplay.
+            <figure>
+                <img src="rattler-race_1.png">
+                <figcaption>RattlerRace</figcaption>
+            </figure>
+        </article>
+    </section>
+    <section id="try">  
+        <h1> Try it out yourself! </h1>
+        <a href="https://snake.googlemaps.com/">Google Snake Game!</a>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+    </section>
+    <footer>
+        Idk
+    </footer>
 </body>
 </html>
