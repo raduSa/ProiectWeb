@@ -86,9 +86,6 @@ article {
     margin-top: 1em;
     margin-bottom: 1em;
 }
-article #history {
-    display: grid;
-}
 h1 {
     padding-bottom: 1em;
     text-decoration: underline;
@@ -96,10 +93,9 @@ h1 {
 }
 iframe {
     width: 70%; 
-    height: 40em;
+    height: 30em;
     margin-left: 15%;
     margin-right: 15%;
-    overflow: hidden;
 }
 a {
     color: white;
@@ -113,12 +109,23 @@ footer {
     margin-top: 2em;
     background-color: var(--gray);
     color: white;
-    padding: 20px 0;
-    text-align: center;
+    padding: 1em 0;
     position: relative;
     width: 100%;
-    height: 1em;
+    height: 6em;
     border-top: 3px solid var(--blue);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 0.5em;
+    justify-items: center;
+}
+footer pre {
+    margin-left: -2em;
+}
+footer * {
+    margin: 0;
+    background-color: inherit;
 }
 
 
@@ -208,8 +215,6 @@ footer {
     width: 100%;
     height: 15vh;
     margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,7 +272,6 @@ footer {
     display: flex;
     width: 100%;
     height: 10em;
-    padding-right: 10em;
 }
 .leftDiv {
     display: flex;
