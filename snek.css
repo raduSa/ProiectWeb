@@ -14,10 +14,9 @@ html {
     }
 }
 canvas {
-    border: 1px solid #000;
+    width: 25em;
+    height: 25em;
     display: block;
-    margin: 0 auto;
-    background-color: white;
 }
 body {
     background-color: var(--gray);
@@ -94,8 +93,8 @@ h1 {
 iframe {
     width: 70%; 
     height: 30em;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 13%;
+    margin-right: 13%;
 }
 a {
     color: white;
@@ -126,6 +125,9 @@ footer pre {
 footer * {
     margin: 0;
     background-color: inherit;
+}
+section {
+    margin: 4em auto;
 }
 
 
@@ -301,4 +303,82 @@ img {
     position: relative;
     max-height: 20em;
     width: auto;
+}
+
+#googleSnake, #mySnake {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectDifficulty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.canvasDiv {
+    display: flex;
+    position: relative;
+    margin: 0;
+    width: 90vw;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.blueBorder {
+    border: 3px solid blue;
+}
+
+#endScreen {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 3rem;
+}
+
+#highScores {
+    text-align: center;
+    overflow: auto;
+    font-size: 2rem;
+    width: 80%;
+    height: 40%;
+}
+
+.highscore {
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+.highscore:last-child {
+    border-bottom: none;
+}
+
+#newHighScore {
+    font-size: 2rem;
+    position: absolute;
+    margin-top: 20%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#nameInput {
+    height: 2em;
+    width: 2.5em;
+    font-size: 1.5rem;
+}
+
+input:valid {
+    border-width: 3px;
+    border-color: green;
+}
+
+input:invalid {
+    border-width: 3px;
+    border-color: red;
 }
