@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake</title>
+<link rel="stylesheet" type="text/css" href="snek.css">
+<script type="text/javascript" src="script-file.js"></script>
+</head>
+<body>
+    <header>
+        <div class="title">Snake</div>
+        <nav>
+            <ul>
+              <li><a href="#whatis">What?</a></li>
+              <li><a href="#history">When?</a></li>
+              <li><a href="#try">HOW?!</a></li>
+            </ul>   
+        </nav>
+    </header>
+    <br>
+    <div class="snake">
+        <div class="snakeBody">
+            <div class="bodyBit"></div>
+            <div class="bodyBit"></div>
+            <div class="bodyBit"></div>
+            <div class="bodyBit"></div>
+            <div class="bodyBit"></div>
+        </div>
+        <div class="snakeHead">
+            <div class="headTop">
+                <div class="eye"></div>
+            </div>
+            <div class="headBot"></div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdownButton">Choose color:</button>
+            <div class="dropdownContent">
+                <button id="Btn1">Var 1</button>
+                <button id="Btn2">Var 2</button>
+                <button id="Btn3">Var 3</button>
+                <button id="Btn4">Random!</button>
+            </div>
+        </div>
+    </div>
+    <section id="whatis">
+        <h1> What is snake? </h1>
+        <article>
+            <strong>Snake</strong> is a sub-genre of action video games where the player maneuvers the end of a growing line, often themed as a snake. The player must keep the snake from colliding with both other obstacles and itself, which gets harder as the snake lengthens.
+            <figure>
+                <img src="Snake_can_be_completed.gif" alt="snake">
+                <figcaption>Snake, the single-player game!</figcaption>
+            </figure>
+        </article>
+    </section>
+    <section id="history">
+        <h1> A short history </h1>
+        <article>
+            <div class="container">
+                <div class="leftDiv"><p>The Snake genre began with the 1976 arcade video game <em>Blockade</em> developed and published by Gremlin.</p></div>
+                <div class="rightDiv"><img src="Blockade_Arcade_US_flyer.jpg" alt="Blockade" style="height: 15em; width: 15em;"></div>
+            </div>
+        </article>
+        <article>
+            <div class="container">
+                <div class="leftDiv"><p>The first known home computer version, <em>Worm</em>, was programmed by Peter Trefonas for the TRS-80 and published by CLOAD magazine in 1978. Versions followed from the same author for the Commodore PET and Apple II.</p></div>
+                <div class="rightDiv"><img src="snake2.jpg" alt="Snake" style="height: 10em; width: 10em;"></div>
+            </div>
+        </article>
+        <article>
+            <div class="container">
+                <div class="leftDiv"><p><em>Nibbler</em> (1982) is a single-player arcade game where the snake fits tightly into a maze, and the gameplay is faster than most snake designs.</p></div>
+                <div class="rightDiv"><img src="Nibbler_(1982_arcade_flyer).jpg" alt="Nibbler" style="height: 10em; width: 15em;"></div>
+            </div>
+        </article>
+        <article>
+            <div class="container">
+                <div class="leftDiv"><p>In 1992, <em>Rattler Race</em> was released as part of the second Microsoft Entertainment Pack. It adds enemy snakes to the familiar apple-eating gameplay.</p></div>
+                <div class="rightDiv"><img src="rattler-race_1.png" alt="RattlerRace" style="height: 10em; width: 10em;"></div>
+            </div>
+        </article>
+    </section>
+    <section id="try">  
+        <h1> Try it out yourself! </h1>
+        <article id="googleSnake">
+        <iframe src="https://snake.onl/" id="snakeIframe"></iframe>
+        <br><br><br><br>
+        <a href="https://snake.googlemaps.com/"><strong> Google Snake Game! </strong></a>
+        </article>
+        <br>
+        <article id="mySnake">
+        <div class="canvasDiv">
+        <form id="newHighScore">
+            <label for="name">Enter name: </label>
+            <input type="text" name="nameInput" id="nameInput" value=<%= alias %> max="3" pattern="[A-Z]{3}" title="3 capital letters" required>
+        </form>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div id="endScreen">
+            <p id="score">Your score: </p>
+            <div id="highScores">Highscores:</div>
+        </div>
+        </div>
+        <h4>Select Game Difficulty:</h4>
+        <div class="selectDifficulty">
+            <span>
+            <input type="radio" id="easy" name="difficulty" value="1000" checked>
+            <label for="easy">Easy</label>
+            </span>
+            <span>
+            <input type="radio" id="medium" name="difficulty" value="250">
+            <label for="medium">Medium</label>
+            </span>
+            <span>
+            <input type="radio" id="hard" name="difficulty" value="100">
+            <label for="hard">Hard</label>
+            </span>
+        </div>
+        </article>
+    </section>
+    <br><br>
+    <form action="/snek" method="post">
+        <button type="submit" id="logout">Logout</button>
+    </form>
+    <footer>
+        <p>Snake!</p>
+        <pre>
+        --..,_                     _,.--.
+            `'.'.                .'`__ o  `;__.
+               '.'.            .'.'`  '---'`  `
+                 '.`'--....--'`.'
+                   `'--....--'`
+        </pre>
+    </footer>
+</body>
+</html>

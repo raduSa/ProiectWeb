@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script type="text/javascript" src="login.js"></script>
+  </head>
+<body>
+    <h1>Time for Snake</h1>
+    <form method="post" action="login">
+      <label>
+        Username: <input type="text" name="username" value="user1" required>
+      </label>
+      <label>
+        Parola: <input type="password" name="parola" value="123" required>
+      </label>
+      <label>Alias: <input type="text" name="alias" pattern="[A-Z]{3}" placeholder="3 Litere mari" required></label>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+    <br>
+    <canvas id="canvas"></canvas>
+</body>
+</html>
