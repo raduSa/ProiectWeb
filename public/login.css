@@ -1,0 +1,50 @@
+input::placeholder {
+    color: red;
+    opacity: 1;
+    font-size: 16px;
+    font-weight: bold;
+}
+body {
+    background-color: #1c1c1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+label {
+    color: white;
+    font-size: 2rem;
+}
+label > input {
+    display: inline-block;
+    font-size: 2rem;
+    width: 10rem;
+}
+#submit {
+    display: inline-block;
+    width: 7rem;
+    height: 5rem;
+}
+h1 {
+    font-size: 4rem;
+    color:blue;
+}
+canvas {
+    display: inline-block; 
+    width: 17em; 
+    height: 10em;
+    margin-left: 50px;
+}
+
+@media (max-width: 800px) {
+    form {
+        flex-direction: column;
+    }
+}
